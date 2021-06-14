@@ -27,11 +27,15 @@ public class PageViewServlet extends HttpServlet {
   private int pageViews = 0;
 
   @Override
+
+
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     pageViews++;
 
+  String randomString = new String[] {"Dog", "Cat", "Horse", "Turtle", "Giraffe"}[(int)(Math.random()*5)];
+
     response.setContentType("text/html;");
-    response.getWriter().println("<h1>Page Views</h1>");
-    response.getWriter().println("<p>This page has been viewed " + pageViews + " times.</p>");
+    response.getWriter().println("<h1>Hello Marlon Romo</h1>");
+    response.getWriter().println("<p>This animal call" + " " +  randomString + ".</p>");
   }
 }
