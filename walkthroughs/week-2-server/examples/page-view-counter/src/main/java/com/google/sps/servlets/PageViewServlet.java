@@ -35,7 +35,6 @@ public class PageViewServlet extends HttpServlet {
   String randomString = new String[] {"Dog", "Cat", "Horse", "Turtle", "Giraffe"}[(int)(Math.random()*5)];
 
     response.setContentType("text/html;");
-    response.getWriter().println("<h1>Hello Marlon Romo</h1>");
-    response.getWriter().println("<p>This animal call" + " " +  randomString + ".</p>");
+    response.getWriter().println("This animal call" + " " +  randomString);
   }
 }
