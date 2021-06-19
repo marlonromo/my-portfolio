@@ -32,7 +32,7 @@ public class PageViewServlet extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     pageViews++;
 
-  String randomString = new String[] {"Dog", "Cat", "Horse", "Turtle", "Giraffe"}[(int)(Math.random()*5)];
+    String randomString = new String[] {"Dog", "Cat", "Horse", "Turtle", "Giraffe"}[(int)(Math.random()*5)];
 
     response.setContentType("text/html;");
     response.getWriter().println("This animal call" + " " +  randomString);
