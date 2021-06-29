@@ -3,8 +3,8 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.google.sps</groupId> %% Marlon Romo Pruebas
-  <artifactId>portfolio</artifactId>
+  <groupId>com.google.sps</groupId>
+  <artifactId>stanley-portfolio</artifactId>
   <version>1</version>
 
   <properties>
@@ -16,7 +16,7 @@
 
     <!-- Project-specific properties -->
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
-    <googleCloudProjectId>YOUR_PROJECT_ID_HERE</googleCloudProjectId>
+    <googleCloudProjectId>mromo-sps-summer21</googleCloudProjectId>
   </properties>
 
   <dependencies>
@@ -80,17 +80,6 @@
                   <mainClass>${exec.mainClass}</mainClass>
                 </transformer>
               </transformers>
-              <filters>
-                <filter>
-                  <artifact>*:*</artifact>
-                  <!-- Some libraries are signed, so exclude signature files from the output jar. -->
-                  <excludes>
-                    <exclude>META-INF/*.SF</exclude>
-                    <exclude>META-INF/*.DSA</exclude>
-                    <exclude>META-INF/*.RSA</exclude>
-                  </excludes>
-                </filter>
-              </filters>
             </configuration>
           </execution>
         </executions>
