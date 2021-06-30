@@ -1,6 +1,6 @@
 
 
-async function getServerStats() {
+async function randomFavoriteMovie() {
   const responseFromServer = await fetch('/favoriteMovies');
   // The json() function returns an object that contains fields that we can
   // reference to create HTML.
