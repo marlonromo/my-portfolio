@@ -3,7 +3,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.google.sps</groupId> %% Marlon Romo Pruebas
+  <groupId>com.google.sps</groupId>
   <artifactId>portfolio</artifactId>
   <version>1</version>
 
@@ -39,6 +39,12 @@
       <version>${jetty.version}</version>
     </dependency>
   </dependencies>
+
+  <dependency>
+  <groupId>com.google.code.gson</groupId>
+  <artifactId>gson</artifactId>
+  <version>2.8.6</version>
+  </dependency>
 
   <build>
     <plugins>
